@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Background
   - Platform
+  - TopSpike
   layers:
   - Default
   - TransparentFX

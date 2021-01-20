@@ -2,8 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BGScroll
+    - GameManager
     - PlatformScript
     - PlatformSpawner
+    - PlayerBounds
+    - SoundManager
     - SugarCube
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -20,7 +23,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/GamePlay.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -47,16 +50,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12160}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 12562}
+      Script: {instanceID: 12564}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 13122}
+      Script: {instanceID: 13124}
+    - Class: 114
+      Script: {instanceID: 14884}
+    - Class: 114
+      Script: {instanceID: 15394}
+    - Class: 114
+      Script: {instanceID: 15400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -370,7 +383,7 @@ ScriptsOnlyBuild:
     className: SugarCube
   - hash:
       serializedVersion: 2
-      Hash: cf16683f0133c65c85d02b2d2e61e688
+      Hash: 0f3a94b4d58316fce49437117656a1fe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformScript
@@ -572,7 +585,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: de49713858460b00901a454c9fac0b52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerBounds
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: e08dbe3c81bd2e062036fab77c0a8bd3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
   platform: 2
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/enistrabelsi/Desktop/Sugar Cube Build/Mac/Sugar Cube.app
+  - Assets/Scenes/GamePlay.unity
+  playerPath: /Users/NicoleMifsud/Desktop/Sugar Cube Buid/SugarCubeBuild.app
