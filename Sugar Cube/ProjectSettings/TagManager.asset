@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - TopSpike
   - Enemy
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Platform
+    uniqueID: 1140924375
+    locked: 0
+  - name: Enemy
+    uniqueID: 2666646203
+    locked: 0
+  - name: Player
+    uniqueID: 1721051867
+    locked: 0
+  - name: Spikes
+    uniqueID: 1375354139
     locked: 0

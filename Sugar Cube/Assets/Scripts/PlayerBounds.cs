@@ -48,5 +48,6 @@ public class PlayerBounds : MonoBehaviour
             SoundManager.instance.DeathSound();
             GameManager.instance.RestartGame();
         }
+        
     }
 }//Class

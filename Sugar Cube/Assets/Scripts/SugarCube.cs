@@ -26,7 +26,8 @@ public class SugarCube : MonoBehaviour
                 myBody.velocity = new Vector2(-moveSpeed, myBody.velocity.y);
             }
         }//move
-    public void PlatformMove(float x) {
-        myBody.velocity = new Vector2(x, myBody.velocity.y);
+        public void PlatformMove(float x) 
+        {
+            myBody.velocity = new Vector2(x, myBody.velocity.y);
         }
 }//class
