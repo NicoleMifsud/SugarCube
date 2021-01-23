@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
+    
     public void PlayGame()
     {
         SceneManager.LoadScene("GamePlay");

@@ -16,6 +16,8 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
         currentSpeed = Random.Range (minSpeed, maxSpeed);
         x = -4f;
         y = Random.Range (-4.0f, 4.0f);
@@ -39,6 +41,7 @@ public class EnemySpawner : MonoBehaviour
             transform.position = new Vector3(randomX,7.5f,0);
         }
 
+        
     }
     void EnemyMove()
     {
@@ -56,8 +59,10 @@ public class EnemySpawner : MonoBehaviour
         if(target.tag == "Player")
         {
             Destroy(target.gameObject);
+            Destroy(this.gameObject);
             SoundManager.instance.DeathSound();
             GameManager.instance.RestartGame();
         }
+        
     }
 }//class
