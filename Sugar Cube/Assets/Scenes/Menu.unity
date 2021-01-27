@@ -625,8 +625,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 16
-    m_FontStyle: 0
+    m_FontSize: 23
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 118
@@ -636,8 +636,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u2022 Use left and right arrow keys to move the player.\n\u2022 Press
-    ESC key to pause the game.\n\u2022 "
+  m_Text: "\u2022 Use the left and right keys to land on the platforms.\n\n\u2022
+    If you don\u2019t make it on the next platform, you\u2019ll fall to your death.\n\n\u2022
+    Watch out for the enemies and spikes \u2013 touch them and you\u2019ll die.\n\n\u2022
+    Be careful when you land on a yellow platform. These pull you to the left or
+    to the right.\n\n\u2022 Press ESC key to pause the game."
 --- !u!222 &409971385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -915,7 +918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &663226300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2170,7 +2173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1661754016
 RectTransform:
   m_ObjectHideFlags: 0
