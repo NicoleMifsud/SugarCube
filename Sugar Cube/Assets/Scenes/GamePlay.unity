@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12848216}
   - component: {fileID: 12848215}
+  - component: {fileID: 12848217}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -408,6 +409,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &12848217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12848214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4e93fee346b424cb91d520aadd5774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: 0
+  scoreText: {fileID: 1583265158}
 --- !u!1 &133793530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1161270036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,7 +1635,6 @@ GameObject:
   - component: {fileID: 1583265159}
   - component: {fileID: 1583265158}
   - component: {fileID: 1583265157}
-  - component: {fileID: 1583265156}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1644,21 +1658,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 240}
+  m_AnchoredPosition: {x: -4, y: 118}
   m_SizeDelta: {x: 361.39813, y: 77.67212}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1583265156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583265154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4e93fee346b424cb91d520aadd5774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1583265157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1695,7 +1697,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ef230ea9ab054482acf225f52adc234, type: 3}
-    m_FontSize: 33
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1706,7 +1708,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score : 250'
+  m_Text: 'Score :'
 --- !u!222 &1583265159
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -31,7 +31,8 @@ public class PlatformScript : MonoBehaviour
             gameObject.SetActive(false);
         }
     }//move
-    
+
+
     void OnTriggerEnter2D(Collider2D target) 
     {
         if(target.tag =="Player")
@@ -72,6 +73,8 @@ public class PlatformScript : MonoBehaviour
             }
         }
     }
+
+
 
 }//class
 
