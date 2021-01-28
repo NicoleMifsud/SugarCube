@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
+    public bool EnemyMove, EnemyFlip;
+
     public float minSpeed;
     public float maxSpeed;
     private float currentSpeed;
@@ -31,6 +33,8 @@ public class Enemy : MonoBehaviour
     {
         EnemyMove();
 
+        EnemyFlip();
+
         //translate the enemy down
         //it needs to move at a speed of 4m/s
         transform.Translate(Vector3.right * _speed * Time.deltaTime);
@@ -54,6 +58,19 @@ public class Enemy : MonoBehaviour
             transform.position = new Vector3 (x, y, z);
         }
     }
+
+        void EnemyFlip()
+    {
+        float amountToMove = currentSpeed * Time.deltaTime;
+        transform.Translate (Vector3.left  * amountToMove);
+        if (transform.position.x >= -4f) 
+        {
+            currentSpeed = Random.Range (minSpeed, maxSpeed);
+            y = Random.Range (4.0f, -4.0f);
+            transform.position = new Vector3 (x, y, z);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D target)
     {
         if(target.tag == "Player")

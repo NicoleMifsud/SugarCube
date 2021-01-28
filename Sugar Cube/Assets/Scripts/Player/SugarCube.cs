@@ -8,29 +8,29 @@ public class SugarCube : MonoBehaviour
 
     public float moveSpeed = 2f;
     
-    private SpawnManager _spawnManager;
+    // private PUSpawner _spawnManager;
     
-    [SerializeField]
-    private float speedMultiplier = 2f;
+    // [SerializeField]
+    // private float speedMultiplier = 2f;
 
-    [SerializeField]
-    private bool _isSpeedBoostActive = false;
+    // [SerializeField]
+    // private bool _isSpeedBoostActive = false;
 
-    [SerializeField]
-    private bool _isIncreaseSizeActive = false;
+    // [SerializeField]
+    // private bool _isIncreaseSizeActive = false;
 
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
 
-        transform.position = new Vector3(0,0,0);
+        // transform.position = new Vector3(0,0,0);
         
-        _spawnManager = GameObject.Find("Spawn_Manager").GetComponent<SpawnManager>();
+        // _spawnManager = GameObject.Find("PowerUpSpawnManager").GetComponent<PUSpawner>();
 
-        if(_spawnManager == null)
-        {
-            Debug.LogError("The spawn manager is null");
-        }
+        // if(_spawnManager == null)
+        // {
+        //     Debug.LogError("The spawn manager is null");
+        // }
     }
 
     // Update is called once per frame
@@ -55,31 +55,31 @@ public class SugarCube : MonoBehaviour
         myBody.velocity = new Vector2(x, myBody.velocity.y);
     }
 
-    public void SpeedBoostActive()
-    {
-        moveSpeed *= speedMultiplier;
-        _isSpeedBoostActive = true;
-        StartCoroutine(speedBoostPowerDownRoutine());
-    }
+    // public void SpeedBoostActive()
+    // {
+    //     moveSpeed *= speedMultiplier;
+    //     _isSpeedBoostActive = true;
+    //     StartCoroutine(speedBoostPowerDownRoutine());
+    // }
 
-    public void IncreaseSizeActive()
-    {
-        //moveSpeed *= speedMultiplier;
-        _isIncreaseSizeActive = true;
-        StartCoroutine(increaseSizePowerDownRoutine());
-    }
+    // public void IncreaseSizeActive()
+    // {
+    //     //moveSpeed *= speedMultiplier;
+    //     _isIncreaseSizeActive = true;
+    //     StartCoroutine(increaseSizePowerDownRoutine());
+    // }
 
-    IEnumerator increaseSizePowerDownRoutine()
-    {
-        yield return new WaitForSeconds(5f);
-        //moveSpeed /= speedMultiplier;
-        _isIncreaseSizeActive = false;
-    }
+    // IEnumerator increaseSizePowerDownRoutine()
+    // {
+    //     yield return new WaitForSeconds(5f);
+    //     //moveSpeed /= speedMultiplier;
+    //     _isIncreaseSizeActive = false;
+    // }
 
-    IEnumerator speedBoostPowerDownRoutine()
-    {
-        yield return new WaitForSeconds(5f);
-        moveSpeed /= speedMultiplier;
-        _isSpeedBoostActive = false;
-    }
+    // IEnumerator speedBoostPowerDownRoutine()
+    // {
+    //     yield return new WaitForSeconds(5f);
+    //     moveSpeed /= speedMultiplier;
+    //     _isSpeedBoostActive = false;
+    // }
 }//class
