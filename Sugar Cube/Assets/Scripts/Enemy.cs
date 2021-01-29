@@ -5,11 +5,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    public bool EnemyMove, EnemyFlip;
+    //public bool EnemyMove, EnemyFlip;
 
-    public float minSpeed;
-    public float maxSpeed;
-    private float currentSpeed;
+    public int enemyID;
+    private float currentSpeed = 2f;
     private float x, y, z;
 
     [SerializeField]
@@ -20,30 +19,33 @@ public class Enemy : MonoBehaviour
     {
 
 
-        currentSpeed = Random.Range (minSpeed, maxSpeed);
-        x = -4f;
-        y = Random.Range (-4.0f, 4.0f);
-        z = 0.0f;
-        transform.position = new Vector3 (x, y, z);
+        //currentSpeed = Random.Range (minSpeed, maxSpeed);
+        //x = -4f;
+        //y = Random.Range (-4.0f, 4.0f);
+        //z = 0.0f;
+        //transform.position = new Vector3 (x, y, z);
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        EnemyMove();
+        
+        if(enemyID == 1)
+        {
+            EnemyMove();
+        }
+        else if(enemyID == 2)
+        {
+            EnemyFlip();
+        }
 
-        EnemyFlip();
+        //EnemyFlip();
 
         //translate the enemy down
         //it needs to move at a speed of 4m/s
-        transform.Translate(Vector3.right * _speed * Time.deltaTime);
 
-        if(transform.position.y < -6f)
-        {
-            float randomX = Random.Range(-4f,4f);
-            transform.position = new Vector3(randomX,7.5f,0);
-        }
+        
 
         
     }
@@ -53,21 +55,19 @@ public class Enemy : MonoBehaviour
         transform.Translate (Vector3.right  * amountToMove);
         if (transform.position.x >= 4f) 
         {
-            currentSpeed = Random.Range (minSpeed, maxSpeed);
             y = Random.Range (-4.0f, 4.0f);
-            transform.position = new Vector3 (x, y, z);
+            transform.position = new Vector3 (-4, y, z);
         }
     }
 
-        void EnemyFlip()
+    void EnemyFlip()
     {
         float amountToMove = currentSpeed * Time.deltaTime;
         transform.Translate (Vector3.left  * amountToMove);
-        if (transform.position.x >= -4f) 
+        if (transform.position.x <= -4f) 
         {
-            currentSpeed = Random.Range (minSpeed, maxSpeed);
-            y = Random.Range (4.0f, -4.0f);
-            transform.position = new Vector3 (x, y, z);
+            y = Random.Range (-4.0f, 4.0f);
+            transform.position = new Vector3 (4, y, z);
         }
     }
 
