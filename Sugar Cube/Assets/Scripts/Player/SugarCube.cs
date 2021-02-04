@@ -59,6 +59,7 @@ public class SugarCube : MonoBehaviour
     {
         moveSpeed *= speedMultiplier;
         _isSpeedBoostActive = true;
+        Debug.Log("Collision with SpeedBoost");
         StartCoroutine(speedBoostPowerDownRoutine());
     }
 
