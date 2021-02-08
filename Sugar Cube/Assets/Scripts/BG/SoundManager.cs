@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource soundFX;
 
     [SerializeField]
-    private AudioClip landClip, deathClip, gameOverClip;
+    private AudioClip landClip, deathClip, gameOverClip, pickUpClip;
 
     void Awake() 
     {
@@ -35,5 +35,9 @@ public class SoundManager : MonoBehaviour
         soundFX.clip = gameOverClip;
         soundFX.Play();
     }
-
+    public void PickUpSound()
+    {
+        soundFX.clip = pickUpClip;
+        soundFX.Play();
+    }
 }//class
