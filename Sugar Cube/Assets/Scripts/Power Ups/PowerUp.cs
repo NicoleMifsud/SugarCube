@@ -32,13 +32,11 @@ public class PowerUp : MonoBehaviour
                 {
                     case 0:
                         player.SpeedBoostActive();
-                        SoundManager.instance.PickUpSound();
                         Debug.Log("_speed Boost Activated");
                         break;
 
                     case 1:
-                        player.IncreaseSizeActive();
-                        SoundManager.instance.PickUpSound();
+                        //player.SpeedBoostActive();
                         Debug.Log("_speed Boost Activated");
                         break;
 

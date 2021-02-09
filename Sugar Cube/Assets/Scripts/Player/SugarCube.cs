@@ -60,6 +60,7 @@ public class SugarCube : MonoBehaviour
     {
         moveSpeed *= speedMultiplier;
         _isSpeedBoostActive = true;
+        Debug.Log("Collision with SpeedBoost");
         StartCoroutine(speedBoostPowerDownRoutine());
     }
 
@@ -72,14 +73,14 @@ public class SugarCube : MonoBehaviour
 
     IEnumerator increaseSizePowerDownRoutine()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         //moveSpeed /= speedMultiplier;
         _isIncreaseSizeActive = false;
     }
 
     IEnumerator speedBoostPowerDownRoutine()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         moveSpeed /= speedMultiplier;
         _isSpeedBoostActive = false;
     }
