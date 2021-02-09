@@ -43,10 +43,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: 520409a1221c14b2da07e8cd5fcd1eae, type: 3}
         m_Scale: {x: 1, y: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Offset: {x: 0, y: 353.75366}
 =======
         m_Offset: {x: 0, y: 571.15314}
 >>>>>>> 61e38243da928dbccf37af00036bcd169f6cea3f
+=======
+        m_Offset: {x: 0, y: 559.3526}
+>>>>>>> parent of 61e3824... Powerup
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

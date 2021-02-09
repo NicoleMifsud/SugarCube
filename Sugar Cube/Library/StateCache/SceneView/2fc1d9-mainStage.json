@@ -1,9 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":0.5661286115646362,"y":1.4892646074295045,"z":-1.4370553493499756},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":6.120916366577148,"orthographic":true}
 =======
+=======
+>>>>>>> Enis_Assignment
 <<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":183.90078735351563,"y":356.00537109375,"z":-68.79688262939453},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":662.6675415039063,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.3506878614425659,"y":0.9700236320495606,"z":-2.483341693878174},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":5.131679058074951,"orthographic":true}
 >>>>>>> 61e38243da928dbccf37af00036bcd169f6cea3f
+<<<<<<< HEAD
+>>>>>>> Enis_Assignment
+=======
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":0.4869111180305481,"y":-1.770592212677002,"z":-2.37180495262146},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":4.198573112487793,"orthographic":true}
+>>>>>>> parent of 61e3824... Powerup
 >>>>>>> Enis_Assignment
