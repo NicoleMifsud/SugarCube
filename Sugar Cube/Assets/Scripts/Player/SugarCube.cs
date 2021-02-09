@@ -24,6 +24,7 @@ public class SugarCube : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
 
         transform.position = new Vector3(0,0,0);
+        transform.localScale = new Vector3(0,0,0);
         
         _spawnManager = GameObject.Find("PowerUpSpawnManager").GetComponent<PUSpawner>();
 
