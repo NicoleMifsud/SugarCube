@@ -17,6 +17,13 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
+        //currentSpeed = Random.Range (minSpeed, maxSpeed);
+        //x = -4f;
+        //y = Random.Range (-4.0f, 4.0f);
+        //z = 0.0f;
+        //transform.position = new Vector3 (x, y, z);
         
     }
 
