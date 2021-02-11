@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlatformScript : MonoBehaviour
 {
-
     public float move_Speed = 2f;
+    
     public float bound_Y = 6f;
 
     public bool moving_Platform_Left, moving_Platform_Right,is_Spike, is_Platform;
@@ -32,11 +32,12 @@ public class PlatformScript : MonoBehaviour
         }
     }//move
 
-
     void OnTriggerEnter2D(Collider2D target) 
     {
         if(target.tag =="Player")
         {
+            //if the player touches the spikes, the game switches to the game over scene and 
+            //game over sound plays.
             if(is_Spike)
             {
                 target.transform.position = new Vector2 (1000f,1000f);
@@ -48,6 +49,7 @@ public class PlatformScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D target) 
     {
+        //if player touches the platform, landing sound plays.
         if(target.gameObject.tag == "Player")
         {
             if(is_Platform)
@@ -55,13 +57,13 @@ public class PlatformScript : MonoBehaviour
                 SoundManager.instance.LandSound();
             }
         }
-
     }// on Collison Enter
 
     void OnCollisionStay2D(Collision2D target) 
     {
         if(target.gameObject.tag == "Player")
         {
+            // if player lands on moving platform he will be pushed either left or right.
             if(moving_Platform_Left)
             {
                 target.gameObject.GetComponent<SugarCube>().PlatformMove(-1f);
@@ -73,8 +75,5 @@ public class PlatformScript : MonoBehaviour
             }
         }
     }
-
-
-
 }//class
 

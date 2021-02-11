@@ -14,7 +14,7 @@ public class PowerUp : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.down * Time.deltaTime * _speed);
-        //if the powerup position on the y axis is smaller than -6f destroy the powerup
+        //if the powerup position on the y axis is smaller than -6f the power up gets destroyed 
         if(transform.position.y < -6f)
         {
             Destroy(this.gameObject);
@@ -25,6 +25,7 @@ public class PowerUp : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            //if player collides with powerup prefab powerup gets activated and pick up sound will play.
             SugarCube player = other.GetComponent<SugarCube>();
             if(player != null)
             {
@@ -34,21 +35,14 @@ public class PowerUp : MonoBehaviour
                         player.SpeedBoostActive();
                         SoundManager.instance.PickUpSound();
                         Debug.Log("_speed Boost Activated");
-                        break;
-
-                    case 1:
-                        player.IncreaseSizeActive();
-                        SoundManager.instance.PickUpSound();
-                        Debug.Log("_speed Boost Activated");
+                        Destroy(this.gameObject);
                         break;
 
                     default:
                         Debug.Log("Default Value");
                         break;
-
                 }
             }
-            Destroy(this.gameObject);
         }
     }
 }

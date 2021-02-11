@@ -6,8 +6,8 @@ public class PlayerBounds : MonoBehaviour
 {
 
     public float min_X = - 2.6f, max_X = 2.6f, min_Y = -5.6f;
+    
     private bool out_Of_Bounds;
-
 
     // Update is called once per frame
     void Update()
@@ -48,6 +48,5 @@ public class PlayerBounds : MonoBehaviour
             SoundManager.instance.DeathSound();
             GameManager.instance.RestartGame();
         }
-        
     }
 }//Class

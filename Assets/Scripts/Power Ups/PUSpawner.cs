@@ -25,6 +25,7 @@ public class PUSpawner : MonoBehaviour
     {
         while(_stopSpawning == false)
         {
+            //setting powerup spawn position
             Vector3 posToSpawn = new Vector3(Random.Range(-2.4f,2.4f),4f,0);
             int randomPowerup = Random.Range(0,_powerups.Length);
             Instantiate(_powerups[randomPowerup],posToSpawn,Quaternion.identity);

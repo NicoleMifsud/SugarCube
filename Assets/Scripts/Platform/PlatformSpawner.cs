@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
 {
-
     public GameObject platformPrefab;
+
     public GameObject[] movingPlatforms;
 
     public float platform_Spawn_Timer = 1.8f;
+
     private float current_Platform_Spawn_Timer;
 
     private int platform_Spawn_Count;
+
     public float min_X = -2f, max_X = 2f;
     // Start is called before the first frame update
     void Start()

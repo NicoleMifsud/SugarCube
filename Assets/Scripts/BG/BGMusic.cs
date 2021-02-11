@@ -13,5 +13,4 @@ public class BGMusic : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-    
-}
+}//class

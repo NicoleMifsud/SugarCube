@@ -15,10 +15,7 @@ public class SugarCube : MonoBehaviour
 
     [SerializeField]
     private bool _isSpeedBoostActive = false;
-
-    [SerializeField]
-    private bool _isIncreaseSizeActive = false;
-
+    
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -33,7 +30,6 @@ public class SugarCube : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Move();
@@ -60,20 +56,6 @@ public class SugarCube : MonoBehaviour
         moveSpeed *= speedMultiplier;
         _isSpeedBoostActive = true;
         StartCoroutine(speedBoostPowerDownRoutine());
-    }
-
-    public void IncreaseSizeActive()
-    {
-        //moveSpeed *= speedMultiplier;
-        _isIncreaseSizeActive = true;
-        StartCoroutine(increaseSizePowerDownRoutine());
-    }
-
-    IEnumerator increaseSizePowerDownRoutine()
-    {
-        yield return new WaitForSeconds(4f);
-        //moveSpeed /= speedMultiplier;
-        _isIncreaseSizeActive = false;
     }
 
     IEnumerator speedBoostPowerDownRoutine()

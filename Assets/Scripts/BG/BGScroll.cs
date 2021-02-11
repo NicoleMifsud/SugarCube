@@ -14,7 +14,6 @@ public class BGScroll : MonoBehaviour
         mesh_Renderer = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Scroll();
@@ -25,4 +24,4 @@ public class BGScroll : MonoBehaviour
 
         mesh_Renderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
     }
-}
+}//class
